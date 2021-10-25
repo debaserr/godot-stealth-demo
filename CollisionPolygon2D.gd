@@ -1,7 +1,9 @@
 extends CollisionPolygon2D
 
-export (int) var detect_radius
-export var FOV = 90
+export (int) var detect_radius = 200
+export (int) var FOV = 90
+
+onready var polygon2D = $Polygon2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -20,3 +22,4 @@ func set_poly(center, radius, angle_from, angle_to):
 		var angle_point = deg2rad(angle_from + i * (angle_to - angle_from) / nb_points)
 		points_arc.push_back(center + Vector2(cos(angle_point), sin(angle_point)) * radius)
 	set_polygon(points_arc)
+	polygon2D.set_polygon(points_arc)
