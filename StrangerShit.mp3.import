@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/StrangerShit.mp3-cd3c1290c054de94edcf5223e551f1d8.mp3str"
+
+[deps]
+
+source_file="res://StrangerShit.mp3"
+dest_files=[ "res://.import/StrangerShit.mp3-cd3c1290c054de94edcf5223e551f1d8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
